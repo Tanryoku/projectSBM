@@ -4,6 +4,8 @@
 @import url(normalize.css);
 /* Importation des polices */
 @import url(font.css);
+/* Import du style Footer */
+@import url(footerStyle.css);
 
 /* Nommage des couleurs pour réutilisation simple */
 
@@ -150,6 +152,9 @@ nav ul{
     }
 }
 
+/* *******************
+        Main
+*********************/
 
 h1{
     text-align: center;
