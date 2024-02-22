@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>test API</title>
+</head>
+<body>
+
+    <div id="bloc_cam_sbm">
+        <h1>Ecran Webcam SBM</h1>
+        <div class="webcam"><iframe src="https://jm-web.whereby.com/demo-e4522c58-60cc-4721-b2cf-0125babe5cbe" allow="camera; microphone; fullscreen; speaker; display-capture; compute-pressure" style="height: 700px; width: 100%"></iframe></div>
+    </div>
+
+    <div id="bloc_cam_guest">
+        <h1>Ecran Webcam guest</h1>
+        <div class="webcam"><embed src="" type=""></div>
+    </div>
+
+    <div class="card" onclick="toggleText()"> <!-- Appelle la fonction toggleText() lors du clic -->
+        <div class="card-content">
+          <h2>Carte Cliquable</h2>
+          <p id="card-text" class="hidden">Texte qui apparaît</p>
+        </div>
+      </div>
+      <script src="config.js"></script>
+</body>
+</html>
