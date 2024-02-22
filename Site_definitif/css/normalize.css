@@ -11,6 +11,11 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+
+  a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Assure que les liens conservent la couleur par défaut du texte */
+  }
 }
 
 /* Sections
