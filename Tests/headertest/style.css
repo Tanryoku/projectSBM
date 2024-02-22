@@ -100,22 +100,26 @@ nav ul{
         display: block;
     }
 
+    /* icone avant clic : menu burger*/
     #icons:before {
         content : "\2630";
     }
+
+    /* icone après clic : Croix */
     .active #icons:before {
         content: "\2715";
     }
 
+    /* modification pour responsif version phone */
     nav ul{
         position: fixed;
-        left: -100%;
+        left: -100%; /* sortir le bloc de l'affichage */
         top: 9%;
-        flex-direction: column;
+        flex-direction: column; /*Modifier l'agencement en colonne pour l'affichage téléphone */
         width: 100%;
         text-align: center;
         transition: 0.25s;
-        background-color: rgba(128, 128, 128, 0.295);
+        background-color: rgba(128, 128, 128, 0.295); /* ajout d'un background-color pour *relever* le menu par dessus les autrse blocs et aider à la visibilité */
         align-items: center;
         margin: 0; /* annuler la marge du main pour ne pas gêner le placement responsif */
     }
@@ -128,7 +132,7 @@ nav ul{
         background: rgb(170, 227, 250);
     }
 
-
+    /*affichage du bloc menu-burger lors du clic */
     nav.active ul {
         left:0;
     }
