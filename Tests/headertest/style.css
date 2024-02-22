@@ -87,7 +87,7 @@ nav ul{
 }
 
 /* Main Desktop = ici adaptation sur téléphone */
-@media (max-width : 768px){
+@media (max-width : 769px){
     header{
         width: 100%;
         height: auto;
