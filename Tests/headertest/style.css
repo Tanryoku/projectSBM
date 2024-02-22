@@ -1,9 +1,22 @@
+/* Nommage des couleurs pour réutilisation simple */
+
+:root{
+    --main_vert:#B5D0B4;
+    --hover_vert:#9ae697;
+    --main_bleu:#BDBBE2;
+    --hover_bleu:#68a8e4;
+}
+
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*  **************************
+            Header
+***************************** */
 header{
     height: 5vw
 }
@@ -11,6 +24,10 @@ header{
 nav {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 #nav div:first-of-type{
@@ -21,12 +38,28 @@ nav {
 #nav div:first-of-type img{
     object-fit: contain;
     width: 100%;
-
 }
 
-li{
-    list-style: none;
 
+/* Boutons alignés à droite avec léger espacement entre eux */
+
+li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: var(--main_vert);
+    width: 20%;
+    height: 5vw;
+    border-radius: 1vw;
+    margin: 0.5em 2em 0.5em 2em;  /*marges gauche-droite pour régler l'espacement entre objet, lié avec marges ul*/
+    border: 1px solid #8d8baf;
+    box-shadow: 3px 3px 1.5px 0 rgba(0, 0, 0, 0.4);
+}
+
+li:hover{
+    color: var(--hover_bleu);
+    background-color: var(--hover_vert);
 }
 
 a,a:visited{
@@ -35,14 +68,10 @@ a,a:visited{
     text-transform: uppercase;
 }
 
-a:hover{
-    color: aqua;
-}
 
 /*  Navbar */
 
 nav{
-    background-color: skyblue;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -54,9 +83,10 @@ nav ul{
     display: flex;
     justify-content: space-between;
     width: 60%;
+    margin: 0 0 0 15em; /* Alignement vers la droite / à ajuster avec les marges des li*/
 }
 
-
+/* Main Desktop = ici adaptation sur téléphone */
 @media (max-width : 768px){
     header{
         width: 100%;
@@ -82,23 +112,25 @@ nav ul{
         left: -100%;
         top: 9%;
         flex-direction: column;
-        background-color: skyblue;
         width: 100%;
         text-align: center;
         transition: 0.25s;
+        background-color: rgba(128, 128, 128, 0.295);
+        align-items: center;
+        margin: 0; /* annuler la marge du main pour ne pas gêner le placement responsif */
     }
-
-    
-
     nav li{
         padding: 1% 0;
+        margin: 0.5em 0 0.5em 0; /*ajustement des marges main faîte ici */
 
     }
     nav li:hover{
         background: rgb(170, 227, 250);
     }
+
+
     nav.active ul {
-        left:0
+        left:0;
     }
 }
 
