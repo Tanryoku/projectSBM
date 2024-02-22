@@ -1,3 +1,10 @@
+/* Le reset en premier pour nonifier border,padding et les list-type*/
+@import url(reset.css);
+/* Un Normalize importé d'un github : "@import url(reset.css);" pour assurer le fonctionnement sur un maximum de navigateurs */
+@import url(normalize.css);
+/* Importation des polices */
+@import url(font.css);
+
 /* Nommage des couleurs pour réutilisation simple */
 
 :root{
@@ -5,13 +12,6 @@
     --hover_vert:#9ae697;
     --main_bleu:#BDBBE2;
     --hover_bleu:#68a8e4;
-}
-
-/* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*  **************************
@@ -43,7 +43,7 @@ nav {
 
 /* Boutons alignés à droite avec léger espacement entre eux */
 
-li{
+nav ul li{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -57,12 +57,12 @@ li{
     box-shadow: 3px 3px 1.5px 0 rgba(0, 0, 0, 0.4);
 }
 
-li:hover{
+nav ul li:hover{
     color: var(--hover_bleu);
     background-color: var(--hover_vert);
 }
 
-a,a:visited{
+nav ul li a,a:visited{
     color: black;
     text-decoration: none;
     text-transform: uppercase;
