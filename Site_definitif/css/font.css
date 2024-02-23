@@ -69,3 +69,9 @@
     font-weight: 900;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: 'LucidaBright';
+    src: url('/projectSBM/Assets/fonts/LucidaBrightRegular.ttf') format('truetype');
+    /* Autres formats possibles : woff, woff2, eot, etc. */
+}
