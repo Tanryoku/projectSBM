@@ -25,14 +25,11 @@
             <div class="mainContent">
                 <form action="#" method="post">
                 
-                    <label for="nom">Nom:</label>
-                    <input type="text" id="nom" name="nom" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
 
                     <label for="prenom">Prénom:</label>
                     <input type="text" id="prenom" name="prenom" required>
-
-                    <label for="date_naissance">Date de Naissance:</label>
-                    <input type="date" id="date_naissance" name="date_naissance" required>
                     
                     <p>Pas de compte ?<a href="./inscription.php"> <u>Cliquez ici</u></a></p>
 

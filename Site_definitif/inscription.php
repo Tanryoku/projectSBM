@@ -40,6 +40,9 @@
                     <label for="phone">phone:</label>
                     <input type="tel" id="phone" name="phone" required>
 
+                    <label for="password">mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+
                     <p>Déja un compte ?<a href="./connexion.php"> <u>Cliquez ici</u></a></p>
 
                     <input type="submit" value="Envoyer">
