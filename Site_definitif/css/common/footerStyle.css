@@ -7,7 +7,7 @@ section.mainFooter {
   text-align: center;
 }
 
-ul {
+section.mainFooter ul {
   padding-top: 5vh;
   li {
     padding-top: 0.5vh;
