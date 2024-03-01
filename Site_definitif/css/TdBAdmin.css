@@ -1,0 +1,83 @@
+/* Le reset en premier pour nonifier border,padding et les list-type*/
+@import url(./common/reset.css);
+/* Un Normalize importé d'un github : "@import url(reset.css);" pour assurer le fonctionnement sur un maximum de navigateurs */
+@import url(./common/normalize.css);
+/* Importation des polices */
+@import url(./common/font.css);
+/* importation du style header */
+@import url(./common/headerStyle.css);
+/*importation du style footer */
+@import url(./common/footerStyle.css);
+
+/* Nommage des couleurs pour réutilisation simple */
+
+:root{
+    --main_vert:#B5D0B4;
+    --hover_vert:#9ae697;
+    --main_bleu:#BDBBE2;
+    --hover_bleu:#68a8e4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************
+Tableau de bord admin
+***********************/
+
+#TdB{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    margin: 0% 10%;
+}
+.nav_TdB{
+    background-color: var(--main_vert);
+    width: 18vw;
+    height: 6vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5) ;
+    text-align: center;!important
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 13%;
+    font-size: 2.2vw;
+}
+
+.nav_TdB:hover{
+    background-color: var(--hover_vert);
+}
+
+.nav_TdB:active{
+    box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.5),
+                    3px 3px 3px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+/* Main Desktop = ici adaptation sur téléphone */
+
+@media (max-width : 768px){
+
+    /****************
+    Tableau de bord Admin
+    ******************/
+
+    #TdB{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_TdB{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

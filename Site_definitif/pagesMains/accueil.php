@@ -1,4 +1,17 @@
-    <?php include('header_preco.inc.php'); ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil SBM</title>
+        <link rel="stylesheet" href="../css/accueil.css">
+    </head>
+    <body>
+        
+
+    </html>
+    
+    <?php include('./include/header_preco.inc.php'); ?>
     
     <main>
     <section id="accueil_main">
@@ -24,4 +37,6 @@
     </section>
     </main>
 
-    <?php include('footer.inc.php'); ?>
+    <?php include('./include/footer.inc.php'); ?>
+
+    </body>
