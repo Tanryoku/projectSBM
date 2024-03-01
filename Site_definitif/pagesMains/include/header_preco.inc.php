@@ -2,7 +2,7 @@
     <header>
         <nav id="nav">
             <div>
-                <img src="./Assets/Logos/Logo V4.png" alt="">
+                <img src="./Assets/Logos/Logo_V4.png" alt="logo SBM">
             </div>
             <ul>
                 <li>
@@ -20,4 +20,3 @@
     </header>
 
 </body>
-<script src="js/config.js"></script>

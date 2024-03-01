@@ -17,5 +17,3 @@
             <div id="icons"></div>
         </nav>
     </header>
-
-<script src="js/config.js"></script>

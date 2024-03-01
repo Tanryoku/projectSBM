@@ -1,0 +1,130 @@
+/* Le reset en premier pour nonifier border,padding et les list-type*/
+@import url(./common/reset.css);
+/* Un Normalize importé d'un github : "@import url(reset.css);" pour assurer le fonctionnement sur un maximum de navigateurs */
+@import url(./common/normalize.css);
+/* Importation des polices */
+@import url(./common/font.css);
+/* importation du style header */
+@import url(./common/headerStyle.css);
+/*importation du style footer */
+@import url(./common/footerStyle.css);
+
+:root{
+    --main_vert:#B5D0B4;
+    --hover_vert:#9ae697;
+    --main_bleu:#BDBBE2;
+    --hover_bleu:#68a8e4;
+}
+
+main{
+    background: linear-gradient(white, #B5D0B4 15%);
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 6%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.smallBtn{
+    width: 18vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_bleu);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5) ;
+    font-size: 2.2vw;
+}
+
+.smallBtn:hover{
+    background-color: var(--hover_bleu);
+    box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.5),
+                    3px 3px 3px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+#tirage{
+    border: 1px solid #F4F442;
+    width: 32vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(#BDBBE2, #9190A0);
+    align-content: center;
+}
+
+#insideBorder{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 10%;
+}
+
+#logo{
+    border-top: 1px solid #F4F442; ;
+    border-bottom: 1px solid #F4F442; ;
+    width: 26vw;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5vw;
+    margin-bottom: 7vw;
+
+}
+
+#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#tirage h1{
+text-align: center;
+}
+
+#lien_tirage{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    -webkit-text-stroke: 1px black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#lien_tirage:hover{
+    color: var(--hover_bleu);
+}
+
+@media(max-width : 768px){
+
+    main{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #menu{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+    }
+
+    #tirage{
+        margin: 20% 0;
+    }
+
+    #lien_tirage{
+        -webkit-text-stroke: unset;
+    }
+}

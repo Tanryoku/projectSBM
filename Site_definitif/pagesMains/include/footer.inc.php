@@ -31,10 +31,12 @@
                         <li><a href="https://www.linkedin.com/in/sbmactiveformation/"><img src="./Assets/icones/icons8-linkedin-96.png" alt="Linkdn icon"></a></li>
                     </ul>
                     <ul>
-                        <li><a href="#"></a><img src="./Assets/icones/icons8-facebook-96.png" alt="Facebook Icon"></li>
+                        <li><a href="#"></a><img src="Assets/icones/icons8-facebook-96.png" alt="Facebook Icon"></li>
                     </ul>
                 </div>
                 
             </section> 
     </footer>
+
+    <script src="/Site_definitif/js/config.js"></script>
 </html>

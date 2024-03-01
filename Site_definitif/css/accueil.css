@@ -123,8 +123,6 @@ h1{
     background-color: var(--main_bleu);
     width: 75%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 3px 3px 1.5px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
     margin: 3% 0 3% 0;
 }
