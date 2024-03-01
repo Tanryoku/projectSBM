@@ -11,6 +11,11 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+
+  a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Assure que les liens conservent la couleur par défaut du texte */
+  }
 }
 
 /* Sections
@@ -174,7 +179,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +190,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -346,4 +353,9 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* Remove style from list */
+li {
+  list-style: none;
 }
