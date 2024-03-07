@@ -10,7 +10,6 @@ connexionForm.addEventListener('submit', (event) => {
     console.log('Email:', emailValue);
     console.log('Password:', passwordValue);
 });
-
 // INSCRIPTION
 // RÉCUPÉRATION DES INFORMATIONS
 const subForm = document.getElementById('inscription-form');
