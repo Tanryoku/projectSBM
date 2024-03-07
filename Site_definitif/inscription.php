@@ -25,7 +25,7 @@
             </div>
 
             <div class="mainContent">
-                <form action="#" method="post">
+                <form action="#" method="post" id="inscription-form">
 
                     <label for="nom">Nom:</label>
                     <input type="text" id="nom" name="nom" required>
@@ -34,7 +34,7 @@
                     <input type="text" id="prenom" name="prenom" required>
 
                     <label for="date_naissance">Date de Naissance:</label>
-                    <input type="date" id="date_naissance" name="date_naissance" required>
+                    <input type="date" id="dateNaissance" name="date_naissance" required>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
@@ -45,9 +45,12 @@
                     <label for="password">mot de passe:</label>
                     <input type="password" id="password" name="password" required>
 
+                    <label for="verifPassword">Verification mot de passe : </label>
+                    <input type="password" id="verifPassword" name="verifPassword" required></label>
+
                     <p>Déja un compte ?<a href="./connexion.php"> <u>Cliquez ici</u></a></p>
 
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Inscription" class="subBouton">
                 </form>
             </div>
         </section>
