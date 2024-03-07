@@ -36,7 +36,8 @@
                     <label for="date_naissance">Date de Naissance:</label>
                     <input type="date" id="dateNaissance" name="date_naissance" required>
 
-                s<input type="email" id="email" name="email" required>
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" required>
 
                     <label for="phone">phone:</label>
                     <input type="tel" id="phone" name="phone" required>

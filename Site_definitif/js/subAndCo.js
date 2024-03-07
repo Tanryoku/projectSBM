@@ -1,3 +1,4 @@
+// CONNEXION
 const connexionForm = document.getElementById('connexion-form');
 
 connexionForm.addEventListener('submit', (event) => {
@@ -10,11 +11,11 @@ connexionForm.addEventListener('submit', (event) => {
     console.log('Password:', passwordValue);
 });
 
-
-
+// INSCRIPTION
+// RÉCUPÉRATION DES INFORMATIONS
 const subForm = document.getElementById('inscription-form');
 
-connexionForm.addEventListener('submit', (event) => {
+subForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const nomValue = document.getElementById('nom').value;
@@ -26,10 +27,23 @@ connexionForm.addEventListener('submit', (event) => {
     const verifPasswordValue = document.getElementById('verifPassword').value;
 
     console.log('Nom:', nomValue);
-    console.log('Prenom:', prenomValue);
+    console.log('Prénom:', prenomValue);
     console.log('Date de naissance:', dateNaissanceValue);
     console.log('Email:', emailValue);
     console.log('Phone:', phoneValue);
-    console.log('Password:', passwordValue);
-    console.log('Verification du Password:', verifPasswordValue);
+    console.log('Mot de passe:', passwordValue);
+    console.log('Vérification du mot de passe:', verifPasswordValue);
+});
+
+// VÉRIFICATION DU MOT DE PASSE
+verifPasswordInput.addEventListener('input', () => {
+    const passwordValue = passwordInput.value;
+    const verifPasswordValue = verifPasswordInput.value;
+
+
+    if (passwordValue === verifPasswordValue) {
+        console.log('Les mots de passe correspondent.');
+    } else {
+        console.log('Les mots de passe ne correspondent pas.');
+    }
 });
