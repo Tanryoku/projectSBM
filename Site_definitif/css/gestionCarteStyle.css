@@ -45,11 +45,13 @@ section.cardList {
 
   .second {
     display: flex;
+    width: 30%;
 
   }
 
   .third {
     display: flex;
+    width: 30%;
 
   }
 }
