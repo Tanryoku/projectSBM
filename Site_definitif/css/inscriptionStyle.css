@@ -10,24 +10,14 @@ main {
     font-family: roboto;
     }
 
-section.mainWindow {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-blue);
-    width: 25%;
-    height: 75%;
-    transform: translate(0, -15vh);
-    border-radius: 10px;
-    border: 1px solid black;
 
-}
 
 section.mainWindowCo {
     display: flex;
     flex-direction: column;
     background-color: var(--main-blue);
-    width: 50vh;
-    height: 95vh;
+    width: 45%;
+    height: 25rem;
     transform: translate(0, -15vh);
     border-radius: 10px;
     border: 1px solid black;
