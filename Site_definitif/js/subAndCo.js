@@ -1,4 +1,5 @@
 // CONNEXION
+
 const connexionForm = document.getElementById('connexion-form');
 
 connexionForm.addEventListener('submit', (event) => {
@@ -10,7 +11,10 @@ connexionForm.addEventListener('submit', (event) => {
     console.log('Email:', emailValue);
     console.log('Password:', passwordValue);
 });
+
+
 // INSCRIPTION
+
 // RÉCUPÉRATION DES INFORMATIONS
 const subForm = document.getElementById('inscription-form');
 
@@ -25,13 +29,13 @@ subForm.addEventListener('submit', (event) => {
     const passwordValue = document.getElementById('password').value;
     const verifPasswordValue = document.getElementById('verifPassword').value;
 
-    console.log('Nom:', nomValue);
-    console.log('Prénom:', prenomValue);
-    console.log('Date de naissance:', dateNaissanceValue);
-    console.log('Email:', emailValue);
-    console.log('Phone:', phoneValue);
-    console.log('Mot de passe:', passwordValue);
-    console.log('Vérification du mot de passe:', verifPasswordValue);
+    // console.log('Nom:', nomValue);
+    // console.log('Prénom:', prenomValue);
+    // console.log('Date de naissance:', dateNaissanceValue);
+    // console.log('Email:', emailValue);
+    // console.log('Phone:', phoneValue);
+    // console.log('Mot de passe:', passwordValue);
+    // console.log('Vérification du mot de passe:', verifPasswordValue);
 });
 
 // VÉRIFICATION DU MOT DE PASSE
