@@ -1,3 +1,6 @@
+/************ ********
+ * Fonctions header
+ ************* ******/
 
 // Permettre l'apparition/disparition du menu format téléphone lors du clic sur le bouton du menu burger
 icons.addEventListener("click", () => {
@@ -13,3 +16,8 @@ document.addEventListener("click", (event) => {
         nav.classList.remove("active");
     }
 });
+
+/************ ********
+ * Fonctions tirage_autonome
+ ************* ******/
+
