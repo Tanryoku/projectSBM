@@ -59,7 +59,7 @@ main{
     right: 67%;
     transform: rotate(-37deg);
 }
-
+/* background: linear-gradient(rgba(189,187,226, 1),rgb(140, 137, 182, 0.3) 80%); Pour les cartes transparentes*/
 .right{
     top: calc(150px + 0.5vw);
     left: 33%;
@@ -86,8 +86,13 @@ main{
 
 /* Lignes de Design */
 
-#reponse{
-    margin: -15% 0 0 23%;  /*Centrer le bloc réponse par rapport au deck */
+
+
+#div_reponse{
+    width: 25%;
+    margin: -15% 0 0 21%;  /*Centrer le bloc réponse par rapport au deck */
+    display: flex;
+    flex-direction: column;
 }
 
 .card-1, .card-2, .card-3, .empty_card, .center, .left, .right{
@@ -100,9 +105,8 @@ main{
     flex-wrap: wrap;
     background-color: var(--main_bleu);
     align-content: center;
+    border-radius: 25px;
 }
-
-/* background: linear-gradient(rgba(189,187,226, 1),rgb(140, 137, 182, 0.3) 80%); Pour les cartes transparentes*/
 
 #insideBorder{
     width: 80%;
@@ -124,8 +128,11 @@ main{
     display: flex;
     justify-content: center;
     padding-top: 0.5vw;
-    margin-bottom: 4vw;
+    margin-bottom: 3vw;
+}
 
+.empty_card #logo{
+    margin-bottom: -9vw;
 }
 
 #logo img{
@@ -144,4 +151,12 @@ text-align: center;
     font-style: normal;
     font-size: 1.5vw;
     text-align: center;
+}
+
+.center{
+    background: linear-gradient(rgba(189,187,226, 1),rgb(140, 137, 182, 0.6) 80%)
+
+}
+.left, .right{
+    background: linear-gradient(rgba(189,187,226, 1),rgb(140, 137, 182, 0.3) 80%)
 }
