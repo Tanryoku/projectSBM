@@ -4,14 +4,10 @@ main {
   height: 100%;
   background: linear-gradient(to bottom, #ffffff, #bdbde2);
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
   color: #000000;
-  /* Couleur du texte */
   font-family: roboto;
 }
-
 
 section.themeList {
   display: flex;
@@ -21,12 +17,19 @@ section.themeList {
   height: 40rem;
   border-radius: 10px;
   border: 1px solid black;
+
+  li {
+    margin-bottom: 3rem;
+  }
 }
 
 section.cardList {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   background-color: #b5d0b4;
+  margin-left: 15px;
+  padding-left: 60px;
   width: 45rem;
   height: 40rem;
   border-radius: 10px;
@@ -37,26 +40,15 @@ section.cardList {
     height: 250px;
   }
 
-  .first {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .second {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .third {
-    display: flex;
-    flex-direction: column;
-
-  }
-
   .numberPage {
+    transform: translateX(125%);
     display: flex;
+    align-content: center;
+  }
+
+  .card {
+    margin-top: 2rem;
   }
 }
+
 
