@@ -2,7 +2,7 @@
     <header>
         <nav id="nav">
             <div>
-                <img src="./Assets/Logos/Logo_V4.png" alt="logo SBM">
+                <img src="../../Assets/Logos/Logo_V4.png" alt="logo SBM">
             </div>
             <ul>
                 <li>

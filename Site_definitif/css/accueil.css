@@ -11,14 +11,14 @@
 
 /* Nommage des couleurs pour réutilisation simple */
 
-:root{
-    --main_vert:#B5D0B4;
-    --hover_vert:#9ae697;
-    --main_bleu:#BDBBE2;
-    --hover_bleu:#68a8e4;
+:root {
+    --main_vert: #B5D0B4;
+    --hover_vert: #9ae697;
+    --main_bleu: #BDBBE2;
+    --hover_bleu: #68a8e4;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,173 +27,137 @@
 /*  **************************
             Header
 ***************************** */
-header{
-    height: 5vw
-}
-
-nav {
-    width: 100%;
-    height: 100%;
+header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 0em 1em 0em 1em;
-    padding-top: 1em;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-#nav div:first-of-type{
-    width: 10vw;
+.header_img:first-child {
+    width: 40%;
     height: auto;
 }
 
-#nav div:first-of-type img{
-    object-fit: contain;
+.header_img {
+    object-fit: cover;
+    margin: 1%;
+}
+
+.header_img>img {
+    max-width: 100%;
+}
+
+main {
     width: 100%;
-}
-
-
-/* Boutons alignés à droite avec léger espacement entre eux */
-
-nav ul li{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background: linear-gradient(white 2%, #B5D0B4 5%);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    list-style: none;
-    background-color: var(--main_vert);
-    width: 18%;
-    height: 3.5vw;
-    border-radius: 1vw;
-    margin: 0.5em 2em 0.5em 2em;  /*marges gauche-droite pour régler l'espacement entre objet, lié avec marges ul*/
-    border: 1px solid #8d8baf;
-    box-shadow: 3px 3px 1.5px 0 rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    color: #000000;
+    /* Couleur du texte */
+    font-family: roboto;
 }
 
-nav ul li:hover{
+.containerHistory {
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    width: 800px;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+
+}
+
+.container {
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    width: 800px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.homeImg {
+    height: 800px;
+    /* border: 1px solid white; */
+    background-color: #fff;
+    margin-bottom: 50px;
+    width: 1200px;
+
+    img {
+        width: 1200px;
+        height: 800px;
+    }
+}
+
+div.registerYou {
+    position: absolute;
+    text-align: center;
+    top: 900px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+div.registerYou:hover{
+    cursor: pointer;
     color: var(--hover_bleu);
     background-color: var(--hover_vert);
 }
 
-nav ul li a,a:visited{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1vw;
-}
-
-.bx{
-    font-size: calc(0.8em + 1vw);
-    margin-right: 3%; /* espacer l'icone et le texte pour aérer le bloc */
-}
-
-
-
-/*  Navbar */
-
-nav{
-    font-size: calc(0.5rem + 1vw);
-    margin-top: -0.6%;
-}
-
-nav ul{
-    display: flex;
-    justify-content: flex-end; /*Alignement à droite des boutons de navigation */
-    width: 60%;
-    margin: 0 0 0 15em; /* placement d'une marge droite pour mieux ajuster le header utilisateur connecté, invisible pour le header préco*/
-}
-
-/* *******************
-        ACCUEIL
-*********************/
-
-h1{
+h1 {
     text-align: center;
-    font-family: LucidaBright;
 }
 
-#accueil_main{
-    display: flex;
+.menu {
+    display: none;
+    /* Par défaut, le menu est caché */
+    position: absolute;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, #fff 1%, var(--main_bleu) 30%);
+    flex-wrap: wrap;
+    top: 60px;
+    /* Ajustez la position en fonction de votre conception */
+    right: 0;
+    background-color: #fff;
+    /* Ajoutez la couleur de fond que vous souhaitez */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ajouter une transition pour l'effet d'apparition */
+    transition: 0.3s ease-in-out;
+    transform: translateX(100%);
+    /* Déplacez le menu hors de l'écran à droite */
 }
 
-.container_accueil{
-    background-color: var(--main_bleu);
-    width: 75%;
-    height: auto;
-    text-align: center;
-    margin: 3% 0 3% 0;
+.menu-appear {
+    /* Transformez le menu pour le faire apparaître depuis la droite */
+    transition: 0.3s ease-in-out;
+    transform: translateX(0);
 }
 
-/* placer le bouton vers inscription au milieu de l'image à l'aide des positions relative / absolute */
-
-#image_inscription{
-    width: 100%;
-    height: 40em;
-    background-image: url(../Assets/Images_pour_fond/hands_big.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    
-    /* centrage du bouton */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#image_inscription a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #F7E4E4, #FFC4C4);
-    width: 50%;
-    height: 10%;
-    border-radius: 12px;
-    font-size: xx-large;
-    color: #912A2A;
-    box-shadow: 3px 3px 1.5px 0 rgba(0, 0, 0, 0.4);
-    border: solid 1px rgba(0, 0, 0, 0.527);
-}
-
-#image_inscription a:hover{
-    border: solid 3px rgba(198, 122, 122);
-    transition: border ease 0.5;
-}
-
-@media (max-width : 769px){
-
-    #image_inscription a{
-        background: linear-gradient(to bottom, #F7E4E4, #FFC4C4);
-        width: 28%;
-        height: 18%;
-        border-radius: 12px;
-        font-size: 4.7vw; /* passage de la taille en relatif-affichage pour assurer qu'elle ne sorte pas du bloc sur les petits affichages */
-        color: #912A2A;
-        text-align: center;
-        /* aérer le bloc bouton inscription en version mobile */
-        letter-spacing: 0.2vw;
-        line-height: 135%;
-
-    }
-}
 
 /***********************
 Tous les main par défaut
 ************************/
 
-main{
-    background: linear-gradient(white 2%, #BDBBE2 5%);
-}
 
 /**********************
 Tableau de bord admin
 ***********************/
 
-#TdB{
+#TdB {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -202,49 +166,66 @@ Tableau de bord admin
     justify-content: center;
     margin: 0% 10%;
 }
-.nav_TdB{
+
+/* .nav_TdB {
     background-color: var(--main_vert);
     width: 18vw;
     height: 6vw;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5) ;
-    text-align: center;!important
-    display: flex;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    !important display: flex;
     align-items: center;
     justify-content: center;
     margin: 10% 13%;
     font-size: 2.2vw;
-}
+} */
 
-.nav_TdB:hover{
+.nav_TdB:hover {
     background-color: var(--hover_vert);
 }
 
-.nav_TdB:active{
+.nav_TdB:active {
     box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.5),
-                    3px 3px 3px 2px rgba(0, 0, 0, 0.5) ;
+        3px 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Main Desktop = ici adaptation sur téléphone */
-@media (max-width : 768px){
-    header{
+@media (max-width : 768px) {
+    header {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
     }
 
-nav{
-    font-size: calc(0.5rem + 1vw);
-    margin-top: -0.6%;
-}
+    #image_inscription a {
+        background: linear-gradient(to bottom, #F7E4E4, #FFC4C4);
+        width: 28%;
+        height: 18%;
+        border-radius: 12px;
+        font-size: 4.7vw;
+        /* passage de la taille en relatif-affichage pour assurer qu'elle ne sorte pas du bloc sur les petits affichages */
+        color: #912A2A;
+        text-align: center;
+        /* aérer le bloc bouton inscription en version mobile */
+        letter-spacing: 0.2vw;
+        line-height: 135%;
+
+    }
+
+    nav {
+        font-size: calc(0.5rem + 1vw);
+        margin-top: -0.6%;
+    }
+
     #icons {
         display: block;
     }
 
     /* icone avant clic : menu burger*/
     #icons:before {
-        content : "\2630";
+        content: "\2630";
     }
 
     /* icone après clic : Croix */
@@ -253,54 +234,111 @@ nav{
     }
 
     /* modification pour responsif version phone */
-    nav ul{
+    nav ul {
         position: fixed;
-        left: -100%; /* sortir le bloc de l'affichage */
+        left: -100%;
+        /* sortir le bloc de l'affichage */
         top: 9%;
-        flex-direction: column; /*Modifier l'agencement en colonne pour l'affichage téléphone */
+        flex-direction: column;
+        /*Modifier l'agencement en colonne pour l'affichage téléphone */
         width: 100%;
         text-align: center;
         align-items: center;
         transition: 0.25s;
-        background-color: rgba(128, 128, 128, 0.295); /* ajout d'un background-color pour *relever* le menu par dessus les autrse blocs et aider à la visibilité */
-        margin: 0; /* annuler la marge du main pour ne pas gêner le placement responsif */
+        background-color: rgba(128, 128, 128, 0.295);
+        /* ajout d'un background-color pour *relever* le menu par dessus les autrse blocs et aider à la visibilité */
+        margin: 0;
+        /* annuler la marge du main pour ne pas gêner le placement responsif */
     }
-    nav li{
+
+    nav li {
         padding: 1% 0;
-        margin: 0.5em 0 0.5em 0; /*ajustement des marges main faîte ici */
+        margin: 0.5em 0 0.5em 0;
+        /*ajustement des marges main faîte ici */
     }
-    nav li:hover{
+
+    nav li:hover {
         background: rgb(170, 227, 250);
     }
 
-    nav ul li{ /* Ajustement de la taille du bloc pour augmenter la taille de la police */
+    nav ul li {
+        /* Ajustement de la taille du bloc pour augmenter la taille de la police */
         width: 30%;
         height: 100%;
     }
 
-    nav ul li a,a:visited{
-        font-size: 3vw; /*augmentation de la taille pour vue sur téléphone */
+    nav ul li a,
+    a:visited {
+        font-size: 3vw;
+        /*augmentation de la taille pour vue sur téléphone */
     }
 
     /*affichage du bloc menu-burger lors du clic */
     nav.active ul {
-        left:0;
+        left: 0;
     }
 
     /****************
     Tableau de bord Admin
     ******************/
 
-    #TdB{
+    #TdB {
         flex-direction: column;
         align-items: center;
     }
 
-    .nav_TdB{
+    .nav_TdB {
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    .containerHistory {
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px black;
+        width: 300px;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 45px;
+
+    }
+
+    .container {
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px black;
+        width: 300px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .homeImg {
+        border: 1px solid black;
+        background-color: #fff;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 100%;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    div.registerYou {
+        position: absolute;
+        text-align: center;
+        top: 900px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 200px;
+        height: 25px;
+
+    }
+
 
 }
