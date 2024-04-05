@@ -32,7 +32,7 @@ header {
   margin: 1%;
 }
 
-.header_img > img {
+.header_img>img {
   max-width: 100%;
 }
 
@@ -44,32 +44,55 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #000000; /* Couleur du texte */
+  color: #000000;
+  /* Couleur du texte */
   font-family: roboto;
 }
 
+.containerHistory {
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 50px;
+
+}
+
+.container {
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
 .menu {
-  display: none; /* Par défaut, le menu est caché */
+  display: none;
+  /* Par défaut, le menu est caché */
   position: absolute;
   flex-direction: column;
   flex-wrap: wrap;
-  top: 60px; /* Ajustez la position en fonction de votre conception */
+  top: 60px;
+  /* Ajustez la position en fonction de votre conception */
   right: 0;
-  background-color: #fff; /* Ajoutez la couleur de fond que vous souhaitez */
+  background-color: #fff;
+  /* Ajoutez la couleur de fond que vous souhaitez */
   padding: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* Ajouter une transition pour l'effet d'apparition */
   transition: 0.3s ease-in-out;
-  transform: translateX(100%); /* Déplacez le menu hors de l'écran à droite */
+  transform: translateX(100%);
+  /* Déplacez le menu hors de l'écran à droite */
 }
 
 .menu-appear {
   /* Transformez le menu pour le faire apparaître depuis la droite */
   transition: 0.3s ease-in-out;
   transform: translateX(0);
-}
-
-h1 {
-  text-align: center;
 }
