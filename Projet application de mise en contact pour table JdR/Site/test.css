@@ -1,0 +1,18 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #parent {
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  .child {
+    width: 50%;
+    float: left;
+    background-color: lightgreen;
+    padding: 20px;
+    box-sizing: border-box;
+  }
