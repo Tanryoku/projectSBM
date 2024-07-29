@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="./css/connexionStyle.css">
+    <link rel="stylesheet" href="./css/inscriptionStyle.css">
 
     <title>Incription</title>
 </head>
+
 <body>
     <header>
         <h1>JE SUIS LE HEADER</h1>
@@ -23,8 +25,8 @@
             </div>
 
             <div class="mainContent">
-                <form action="#" method="post">
-                
+                <form action="#" method="post" id="inscription-form">
+
                     <label for="nom">Nom:</label>
                     <input type="text" id="nom" name="nom" required>
 
@@ -32,9 +34,9 @@
                     <input type="text" id="prenom" name="prenom" required>
 
                     <label for="date_naissance">Date de Naissance:</label>
-                    <input type="date" id="date_naissance" name="date_naissance" required>
-                    
-                    <label for="email">Email:</label>
+                    <input type="date" id="dateNaissance" name="date_naissance" required>
+
+                    <label for="email">email:</label>
                     <input type="email" id="email" name="email" required>
 
                     <label for="phone">phone:</label>
@@ -43,19 +45,21 @@
                     <label for="password">mot de passe:</label>
                     <input type="password" id="password" name="password" required>
 
+                    <label for="verifPassword">Verification mot de passe : </label>
+                    <input type="password" id="verifPassword" name="verifPassword" required></label>
+
                     <p>Déja un compte ?<a href="./connexion.php"> <u>Cliquez ici</u></a></p>
 
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Inscription" class="subBouton">
                 </form>
             </div>
         </section>
 
-    
+
     </main>
     <footer>
         <h1>JE SUIS LE FOOTER</h1>
     </footer>
 </body>
+
 </html>
-
-

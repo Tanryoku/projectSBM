@@ -1,0 +1,99 @@
+/* PC : barre nav aligné à droite, pensé avec trou au milieu pour la caméra sur certains laptop, deux boutons à droite, un juste à gauche de la caméra et logo tout à gauche. */
+/* Téléphone :  Menu Burger à droite, Logo à gauche --> */
+
+:root {
+  --main_vert: #b5d0b4;
+  --hover_vert: #9ae697;
+  --main_bleu: #bdbbe2;
+  --hover_bleu: #68a8e4;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 5%;
+}
+
+.header_img:first-child {
+  width: 40%;
+  height: auto;
+}
+
+.header_img {
+  object-fit: cover;
+  margin: 1%;
+}
+
+.header_img>img {
+  max-width: 100%;
+}
+
+main {
+  margin-top: 10vw;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff, #bdbde2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  /* Couleur du texte */
+  font-family: roboto;
+}
+
+.containerHistory {
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 45px;
+
+}
+
+.container {
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu {
+  display: none;
+  /* Par défaut, le menu est caché */
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 60px;
+  /* Ajustez la position en fonction de votre conception */
+  right: 0;
+  background-color: #fff;
+  /* Ajoutez la couleur de fond que vous souhaitez */
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Ajouter une transition pour l'effet d'apparition */
+  transition: 0.3s ease-in-out;
+  transform: translateX(100%);
+  /* Déplacez le menu hors de l'écran à droite */
+}
+
+.menu-appear {
+  /* Transformez le menu pour le faire apparaître depuis la droite */
+  transition: 0.3s ease-in-out;
+  transform: translateX(0);
+}
