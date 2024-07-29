@@ -7,10 +7,7 @@
         <link rel="stylesheet" href="../css/accueil.css">
     </head>
     <body>
-        
 
-    </html>
-    
     <?php include('./include/header_preco.inc.php'); ?>
     
     <main>
@@ -40,3 +37,4 @@
     <?php include('./include/footer.inc.php'); ?>
 
     </body>
+    </html>
