@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="./css/connexionStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
 
     <title>Connexion</title>
 </head>
@@ -17,24 +18,26 @@
         <h1>JE SUIS LE HEADER</h1>
     </header>
     <main>
-    <section class="mainWindowCo">
+    <section class="mainWindow">
             <div class="mainTitle">
                 <h2>Formulaire de connexion</h2>
             </div>
 
             <div class="mainContent">
-                <form action="#" method="post">
                 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <form action="" method="post" id="connexion-form">
+                    <label for="email">Email :</label><br>
+                    <input type="text" id="email" name="email" required><br>
 
-                    <label for="prenom">Prénom:</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                    
+                    <label for="password">Mot de passe :</label><br>
+                    <input type="password" id="password" name="password" required><br>
+
                     <p>Pas de compte ?<a href="./inscription.php"> <u>Cliquez ici</u></a></p>
 
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Connexion" class="conBouton">
                 </form>
+
+        
             </div>
         </section>
 
@@ -43,6 +46,9 @@
     <footer>
         <h1>JE SUIS LE FOOTER</h1>
     </footer>
+
+    <script src="./js/subAndCo.js></script>
+
 </body>
 </html>
 
